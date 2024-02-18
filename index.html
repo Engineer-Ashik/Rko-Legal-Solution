@@ -15,9 +15,7 @@
     <!--Poppins Font Link-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:wght@400;600&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <title>Rko Legal Solution</title>
 
     <!--Tailwind Custom Color-->
@@ -52,28 +50,34 @@
         }
 
 
-        /* Manrope font class */
-        .font-manrope {
-            font-family: 'Manrope', sans-serif;
+        /* EB Garamond font class */
+        .eb-garamond {
+            font-family: "EB Garamond", serif;
+            font-weight: 800;
+            font-style: normal;
         }
     </style>
 </head>
 
 <body class="bg-clifford">
     <!--Navbar Section-->
-    <section>
-        <div>
+    <section class="flex justify-between items-center p-6">
+        <div class="flex">
             <img src="/images/logo.png">
+            <h2 class="eb-garamond">Justice</h2>
         </div>
 
-        <div>
-            <h1>Home</h1>
-            <h1>Service</h1>
-            <h1>Cases</h1>
-            <h1>Blog</h1>
-            <h1>Contact Us</h1>
-            <button class="btn btn-primary bg-btnclr text-white">Free Consultation</button>
+        <div class="flex items-center gap-16">
+            <div class="flex gap-16">
+            <h5 class="poppins-regular">Home</h5>
+            <h5 class="poppins-regular">Service <i class="fa-solid fa-angle-right"></i></h5>
+            <h5 class="poppins-regular">Cases <i class="fa-solid fa-angle-right"></i></h5>
+            <h5 class="poppins-regular">Blog <i class="fa-solid fa-angle-right"></i></h5>
+            <h5 class="poppins-regular">Contact Us <i class="fa-solid fa-angle-right"></i></h5>
+            </div>
+             <div> <button class="btn btn-primary bg-btnclr text-white poppins-semibold">Free Consultation</button>
         </div>
+    </div>
     </section>
 </body>
 
