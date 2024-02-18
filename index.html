@@ -27,6 +27,7 @@
                 extend: {
                     colors: {
                         clifford: '#FFFFFF',
+                        btnclr: '#B68C5A',
                     }
                 }
             }
@@ -37,10 +38,19 @@
     <script src="https://kit.fontawesome.com/f558265ee4.js" crossorigin="anonymous"></script>
 
     <style>
-        /* plus jakarta font class */
-        .font-jakarta {
-            font-family: 'Plus Jakarta Sans', sans-serif;
+        /* Poppins font class */
+        .poppins-regular {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
         }
+
+        .poppins-semibold {
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+        }
+
 
         /* Manrope font class */
         .font-manrope {
@@ -49,7 +59,22 @@
     </style>
 </head>
 
-<body>
+<body class="bg-clifford">
+    <!--Navbar Section-->
+    <section>
+        <div>
+            <img src="/images/logo.png">
+        </div>
+
+        <div>
+            <h1>Home</h1>
+            <h1>Service</h1>
+            <h1>Cases</h1>
+            <h1>Blog</h1>
+            <h1>Contact Us</h1>
+            <button class="btn btn-primary bg-btnclr text-white">Free Consultation</button>
+        </div>
+    </section>
 </body>
 
 </html>
